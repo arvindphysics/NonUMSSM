@@ -1,0 +1,126 @@
+\subsubsection{Mass Matrices for Fermions}
+\begin{itemize} 
+\item {\bf Mass matrix for Neutrinos}, Basis: \( \left(Fv01L, Fv02L, Fv03L\right), \left(Fv01L, Fv02L, Fv03L\right) \) 
+ 
+\begin{equation} 
+m_{\nu} = \left( 
+\begin{array}{ccc}
+0 &0 &0\\ 
+0 &0 &0\\ 
+0 &0 &0\end{array} 
+\right) 
+ \end{equation} 
+This matrix is diagonalized by \(ZVL\): 
+\begin{equation} 
+ZVL^* m_{\nu} ZVL^{\dagger} = m^{dia}_{\nu} 
+\end{equation} 
+with 
+\begin{align} 
+Fv01L = \sum_{j}ZVL^*_{j 1}\text{FvL}\Big(\{\text{gt2}\}\Big)\,, \hspace{1cm} 
+Fv02L = \sum_{j}ZVL^*_{j 2}\text{FvL}\Big(\{\text{gt2}\}\Big)\,, \hspace{1cm} 
+Fv03L = \sum_{j}ZVL^*_{j 3}\text{FvL}\Big(\{\text{gt2}\}\Big)
+\end{align} 
+\item {\bf Mass matrix for Neutralinos}, Basis: \( \left(\lambda_U, \lambda_{\tilde{B}}, \tilde{W}^0, \tilde{H}_d^0, \tilde{H}_u^0, \tilde{S}\right), \left(\lambda_U, \lambda_{\tilde{B}}, \tilde{W}^0, \tilde{H}_d^0, \tilde{H}_u^0, \tilde{S}\right) \) 
+ 
+\begin{equation} 
+m_{\tilde{\chi}^0} = \left( 
+\begin{array}{cccccc}
+M_Z &0 &0 &g_p Q_{H_d} v_d  &g_p Q_{H_u} v_u  &g_p Q_s v_S \\ 
+0 &M_1 &0 &-\frac{1}{2} g_1 v_d  &\frac{1}{2} g_1 v_u  &0\\ 
+0 &0 &M_2 &\frac{1}{2} g_2 v_d  &-\frac{1}{2} g_2 v_u  &0\\ 
+g_p Q_{H_d} v_d  &-\frac{1}{2} g_1 v_d  &\frac{1}{2} g_2 v_d  &0 &- \frac{1}{\sqrt{2}} v_S \lambda  &- \frac{1}{\sqrt{2}} v_u \lambda \\ 
+g_p Q_{H_u} v_u  &\frac{1}{2} g_1 v_u  &-\frac{1}{2} g_2 v_u  &- \frac{1}{\sqrt{2}} v_S \lambda  &0 &- \frac{1}{\sqrt{2}} v_d \lambda \\ 
+g_p Q_s v_S  &0 &0 &- \frac{1}{\sqrt{2}} v_u \lambda  &- \frac{1}{\sqrt{2}} v_d \lambda  &0\end{array} 
+\right) 
+ \end{equation} 
+This matrix is diagonalized by \(N\): 
+\begin{equation} 
+N^* m_{\tilde{\chi}^0} N^{\dagger} = m^{dia}_{\tilde{\chi}^0} 
+\end{equation} 
+with 
+\begin{align} 
+\lambda_U = \sum_{j}N^*_{j 1}\lambda^0_{{j}}\,, \hspace{1cm} 
+\lambda_{\tilde{B}} = \sum_{j}N^*_{j 2}\lambda^0_{{j}}\,, \hspace{1cm} 
+\tilde{W}^0 = \sum_{j}N^*_{j 3}\lambda^0_{{j}}\\ 
+\tilde{H}_d^0 = \sum_{j}N^*_{j 4}\lambda^0_{{j}}\,, \hspace{1cm} 
+\tilde{H}_u^0 = \sum_{j}N^*_{j 5}\lambda^0_{{j}}\,, \hspace{1cm} 
+\tilde{S} = \sum_{j}N^*_{j 6}\lambda^0_{{j}}
+\end{align} 
+\item {\bf Mass matrix for Charginos}, Basis: \( \left(\tilde{W}^-, \tilde{H}_d^-\right), \left(\tilde{W}^+, \tilde{H}_u^+\right) \) 
+ 
+\begin{equation} 
+m_{\tilde{\chi}^-} = \left( 
+\begin{array}{cc}
+M_2 &\frac{1}{\sqrt{2}} g_2 v_u \\ 
+\frac{1}{\sqrt{2}} g_2 v_d  &\frac{1}{\sqrt{2}} v_S \lambda \end{array} 
+\right) 
+ \end{equation} 
+This matrix is diagonalized by \(U\) and \(V\) 
+\begin{equation} 
+U^* m_{\tilde{\chi}^-} V^{\dagger} = m^{dia}_{\tilde{\chi}^-} 
+\end{equation} 
+with 
+\begin{align} 
+\tilde{W}^- = \sum_{t_2}U^*_{j 1}\lambda^-_{{j}}\,, \hspace{1cm} 
+\tilde{H}_d^- = \sum_{t_2}U^*_{j 2}\lambda^-_{{j}}\\ 
+\tilde{W}^+ = \sum_{t_2}V^*_{1 j}\lambda^+_{{j}}\,, \hspace{1cm} 
+\tilde{H}_u^+ = \sum_{t_2}V^*_{2 j}\lambda^+_{{j}}
+\end{align} 
+\item {\bf Mass matrix for Leptons}, Basis: \( \left(Fe01L, Fe02L, Fe03L\right), \left(Fe01R^*, Fe02R^*, Fe03R^*\right) \) 
+ 
+\begin{equation} 
+m_{e} = \left( 
+\begin{array}{ccc}
+\frac{1}{\sqrt{2}} v_d Ye11  &0 &0\\ 
+0 &\frac{1}{\sqrt{2}} v_d Ye22  &0\\ 
+0 &0 &\frac{1}{\sqrt{2}} v_d Ye33 \end{array} 
+\right) 
+ \end{equation} 
+This matrix is diagonalized by \(U^e_L\) and \(U^e_R\) 
+\begin{equation} 
+U^{e,*}_L m_{e} U_{R}^{e,\dagger} = m^{dia}_{e} 
+\end{equation} 
+with 
+\begin{align} 
+Fe01L = \sum_{t_2}U^{e,*}_{L,{j 1}}E_{L,{j}}\,, \hspace{1cm} 
+Fe02L = \sum_{t_2}U^{e,*}_{L,{j 2}}E_{L,{j}}\,, \hspace{1cm} 
+Fe03L = \sum_{t_2}U^{e,*}_{L,{j 3}}E_{L,{j}}\\ 
+Fe01R = \sum_{t_2}U_{R,{1 j}}^{e}E^*_{R,{j}}\,, \hspace{1cm} 
+Fe02R = \sum_{t_2}U_{R,{2 j}}^{e}E^*_{R,{j}}\,, \hspace{1cm} 
+Fe03R = \sum_{t_2}U_{R,{3 j}}^{e}E^*_{R,{j}}
+\end{align} 
+\item {\bf Mass matrix for Down-Quarks}, Basis: \( \left(d_{L,{{\alpha_1}}}\right), \left(d^*_{R,{{\beta_1}}}\right) \) 
+ 
+\begin{equation} 
+m_{d} = \left( 
+\begin{array}{c}
+\frac{1}{\sqrt{2}} v_d \delta_{{\alpha_1} {\beta_1}} Y_{d}^{T} \end{array} 
+\right) 
+ \end{equation} 
+This matrix is diagonalized by \(U^d_L\) and \(U^d_R\) 
+\begin{equation} 
+U^{d,*}_L m_{d} U_{R}^{d,\dagger} = m^{dia}_{d} 
+\end{equation} 
+with 
+\begin{align} 
+d_{L,{i \alpha}} = \sum_{t_2}U^{d,*}_{L,{j i}}D_{L,{j \alpha}}\\ 
+d_{R,{i \alpha}} = \sum_{t_2}U_{R,{i j}}^{d}D^*_{R,{j \alpha}}
+\end{align} 
+\item {\bf Mass matrix for Up-Quarks}, Basis: \( \left(u_{L,{{\alpha_1}}}\right), \left(u^*_{R,{{\beta_1}}}\right) \) 
+ 
+\begin{equation} 
+m_{u} = \left( 
+\begin{array}{c}
+\frac{1}{\sqrt{2}} v_u \delta_{{\alpha_1} {\beta_1}} Y_{u}^{T} \end{array} 
+\right) 
+ \end{equation} 
+This matrix is diagonalized by \(U^u_L\) and \(U^u_R\) 
+\begin{equation} 
+U^{u,*}_L m_{u} U_{R}^{u,\dagger} = m^{dia}_{u} 
+\end{equation} 
+with 
+\begin{align} 
+u_{L,{i \alpha}} = \sum_{t_2}U^{u,*}_{L,{j i}}\text{FUL}\Big(\{\text{gt2},\text{ct1}\}\Big)\\ 
+u_{R,{i \alpha}} = \sum_{t_2}U_{R,{i j}}^{u}U^*_{R,{j \alpha}}
+\end{align} 
+\end{itemize} 
