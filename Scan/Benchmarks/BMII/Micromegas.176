@@ -1,0 +1,42 @@
+Block micrOMEGAs
+   401   6.376625E+03   #MZp
+   700   1.020416E-01   # relic density 
+   100   8.924917E-02   # ~N1 ~C1 -> d1 U1
+   101   8.910384E-02   # ~N1 ~C1 -> d2 U2
+   102   8.080188E-02   # ~C1 ~C1 -> Wm Wm
+   103   7.731919E-02   # ~N1 ~N1 -> Wm Wp
+   104   7.034349E-02   # ~N1 ~C1 -> d3 U3
+   105   6.453770E-02   # ~N1 ~C1 -> Z Wm
+   106   5.076558E-02   # ~se1 ~Se1 -> Wm Wp
+   107   5.022102E-02   # ~C1 ~c1 -> Z Z
+   108   4.180060E-02   # ~C1 ~c1 -> Wm Wp
+   109   2.957673E-02   # ~se1 ~Se1 -> h1 h1
+   110   2.712082E-02   # ~C1 ~c1 -> A Z
+   111   2.615203E-02   # ~N1 ~C1 -> Nu3 e2
+   112   2.539886E-02   # ~se1 ~Se1 -> Z Z
+   113   2.412738E-02   # ~C1 ~c1 -> u1 U1
+   114   2.412127E-02   # ~C1 ~c1 -> u2 U2
+   115   2.410874E-02   # ~C1 ~c1 -> d1 D1
+   116   2.410600E-02   # ~C1 ~c1 -> d2 D2
+   117   1.969277E-02   # ~N1 ~C1 -> Nu1 e3
+   118   1.818953E-02   # ~C1 ~c1 -> d3 D3
+   119   1.802706E-02   # ~C1 ~c1 -> u3 U3
+   120   1.689695E-02   # ~N1 ~C1 -> A Wm
+   121   1.651353E-02   # ~N1 ~C1 -> Nu2 e1
+   306   3.075128E-26   #sigmaV [cm^3/s]
+   307   -NAN   #Photon flux [cm^2 s GeV]^{-1}
+   308   0.000000E+00   #Positron flux [cm^2 sr s GeV]^{-1}
+   309   -NAN   #Antiproton flux [cm^2 sr s GeV]^{-1}
+   201   1.121219E-10   #P SI [pb]
+   202   1.198146E-07   #P SD [pb]
+   203   1.133978E-10   #N SI [pb]
+   204   9.827232E-08   #N SD [pb]
+   301   9.524152E-05   #73Ge: Total number of events [day/kg]
+   302   1.517839E-04   #131Xe: Total number of events [day/kg]
+   303   1.149229E-05   #23Na: Total number of events [day/kg]
+   304   1.495598E-04   #I127: Total number of events [day/kg]
+   305   1.219710E+00   #IceCube22 exclusion confidence level
+   903   1.029867E-05   #cs(pp-> Zp)
+   904   1.684491E-05   #cs(pp-> ~c1 ~C1)
+   905   1.417411E-06   #cs(pp-> ~N2 ~c1)
+   906   3.342686E-07   #cs(pp-> ~N2 ~C1)

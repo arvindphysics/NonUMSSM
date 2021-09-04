@@ -1,0 +1,195 @@
+Block MODSEL      #  
+ 1 0               #  1/0: High/low scale input 
+ 2 1              # Boundary Condition  
+ 6 1               # Generation Mixing 
+ 12 1000.          # Renormalization scale 
+Block SMINPUTS    # Standard Model inputs 
+ 2 1.166370E-05    # G_F,Fermi constant 
+ 3 1.187000E-01    # alpha_s(MZ) SM MSbar 
+ 4 9.118870E+01    # Z-boson pole mass 
+ 5 4.180000E+00    # m_b(mb) SM MSbar 
+ 6 1.735000E+02    # m_top(pole) 
+ 7 1.776690E+00    # m_tau(pole) 
+Block MINPAR      # Input parameters 
+ 3   TanBetaIN    # TanBeta
+Block EXTPAR      # Input parameters 
+ 71 QqIn    # Qq
+ 72 Ql1IN   # Ql1
+ 73 Ql2IN   # Ql2
+ 74 Ql3IN   # Ql3
+ 75 QHuIN   # QHu
+ 76 QHdIN   # QHd
+ 77 QdIN    # Qd
+ 78 QuIN    # Qu
+ 79 Qe1IN   # Qe1
+ 80 Qe2IN   # Qe2
+ 81 Qe3IN   # Qe3
+ 82 QsIN    # Qs
+Block SPhenoInput   # SPheno specific input 
+  1 -1              # error level 
+  2  0              # SPA conventions 
+  7  0              # Skip 2-loop Higgs corrections 
+  8  3              # Method used for two-loop calculation 
+  9  1              # Gaugeless limit used at two-loop 
+ 10  0              # safe-mode used at two-loop 
+ 11 1               # calculate branching ratios 
+ 13 1               # 3-Body decays: none (0), fermion (1), scalar (2), both (3) 
+ 14 0               # Run couplings to scale of decaying particle 
+ 12 1.000E-04       # write only branching ratios larger than this value 
+ 15 1.000E-30       # write only decay if width larger than this value 
+ 19 -2              # Matching order (-2:automatic, -1:pole, 0-2: tree, one- & two-loop) 
+ 31 -1              # fixed GUT scale (-1: dynamical GUT scale) 
+ 32 0               # Strict unification 
+ 34 1.000E-04       # Precision of mass calculation 
+ 35 40              # Maximal number of iterations
+ 36 5               # Minimal number of iterations before discarding points
+ 37 1               # Set Yukawa scheme  
+ 38 2               # 1- or 2-Loop RGEs 
+ 50 0               # Majorana phases: use only positive masses (put 0 to use file with CalcHep/Micromegas!) 
+ 51 0               # Write Output in CKM basis 
+ 52 0               # Write spectrum in case of tachyonic states 
+ 55 1               # Calculate loop corrected masses 
+ 57 1               # Calculate low energy constraints 
+ 60 1               # Include possible, kinetic mixing 
+ 65 1               # Solution tadpole equation 
+ 66 1               # Two-Scale Matching 
+ 67 1               # effective Higgs mass calculation 
+ 75 0               # Write WHIZARD files 
+ 76 0               # Write HiggsBounds file   
+ 77 1               # Output for MicrOmegas (running masses for light quarks; real mixing matrices)   
+ 78 1               # Output for MadGraph (writes also vanishing blocks)   
+ 79 0               # Write WCXF files (exchange format for Wilson coefficients) 
+ 86 0.              # Maximal width to be counted as invisible in Higgs decays; -1: only LSP 
+ 510 0.              # Write tree level values for tadpole solutions 
+ 515 0               # Write parameter values at GUT scale 
+ 520 0.              # Write effective Higgs couplings (HiggsBounds blocks): put 0 to use file with MadGraph! 
+ 521 1.              # Diphoton/Digluon widths including higher order 
+ 525 0.              # Write loop contributions to diphoton decay of Higgs 
+ 530 0.              # Write Blocks for Vevacious 
+Block DECAYOPTIONS   # Options to turn on/off specific decays 
+1    1     # Calc 3-Body decays of Glu 
+2    1     # Calc 3-Body decays of Chi 
+3    1     # Calc 3-Body decays of Cha 
+4    1     # Calc 3-Body decays of Sd 
+5    1     # Calc 3-Body decays of Su 
+6    1     # Calc 3-Body decays of Se 
+7    1     # Calc 3-Body decays of Sv 
+Block MSD2IN    #  
+  1  1     MSD211IN   # Real(md2(1,1),dp)
+  1  2     2.99597857E-03   # Real(md2(1,2),dp)
+  1  3    -8.04672601E-01   # Real(md2(1,3),dp)
+  2  1     2.99597857E-03   # Real(md2(2,1),dp)
+  2  2     MSD222IN   # Real(md2(2,2),dp)
+  2  3     3.90291693E+01   # Real(md2(2,3),dp)
+  3  1    -8.04672601E-01   # Real(md2(3,1),dp)
+  3  2     3.90291693E+01   # Real(md2(3,2),dp)
+  3  3     MSD233IN   # Real(md2(3,3),dp)
+Block MSQ2IN    #  
+  1  1     MSQ211IN   # Real(mq2(1,1),dp)
+  1  2     1.35525005E+03   # Real(mq2(1,2),dp)
+  1  3    -3.23993469E+04   # Real(mq2(1,3),dp)
+  2  1     1.35525005E+03   # Real(mq2(2,1),dp)
+  2  2     MSQ222IN   # Real(mq2(2,2),dp)
+  2  3     2.23419709E+05   # Real(mq2(2,3),dp)
+  3  1    -3.23993469E+04   # Real(mq2(3,1),dp)
+  3  2     2.23419709E+05   # Real(mq2(3,2),dp)
+  3  3     MSQ233IN   # Real(mq2(3,3),dp)
+Block MSU2IN    #  
+  1  1     MSU211IN   # Real(mu2(1,1),dp)
+  1  2     1.17167651E-06   # Real(mu2(1,2),dp)
+  1  3     4.28868174E-03   # Real(mu2(1,3),dp)
+  2  1     1.17167651E-06   # Real(mu2(2,1),dp)
+  2  2     MSU222IN   # Real(mu2(2,2),dp)
+  2  3     2.55978864E+01   # Real(mu2(2,3),dp)
+  3  1     4.28868174E-03   # Real(mu2(3,1),dp)
+  3  2     2.55978864E+01   # Real(mu2(3,2),dp)
+  3  3     MSU233IN   # Real(mu2(3,3),dp)
+Block TDPIN    #  
+  1  1     Tdp11IN   # Real(Tdp(1,1),dp)
+  1  2     0.00000000E+00   # Real(Tdp(1,2),dp)
+  1  3     0.00000000E+00   # Real(Tdp(1,3),dp)
+  2  1     0.00000000E+00   # Real(Tdp(2,1),dp)
+  2  2     Tdp22IN   # Real(Tdp(2,2),dp)
+  2  3     0.00000000E+00   # Real(Tdp(2,3),dp)
+  3  1     0.00000000E+00   # Real(Tdp(3,1),dp)
+  3  2     0.00000000E+00   # Real(Tdp(3,2),dp)
+  3  3     Tdp33IN   # Real(Tdp(3,3),dp)
+Block YDIN    #  
+  1  1     4.17769911E-04   # Real(Yd(1,1),dp)
+  1  2     8.17098714E-10   # Real(Yd(1,2),dp)
+  1  3    -2.42369257E-08   # Real(Yd(1,3),dp)
+  2  1     3.35977301E-08   # Real(Yd(2,1),dp)
+  2  2     7.12876599E-03   # Real(Yd(2,2),dp)
+  2  3     6.35220298E-06   # Real(Yd(2,3),dp)
+  3  1     5.44230998E-05   # Real(Yd(3,1),dp)
+  3  2    -3.75275766E-04   # Real(Yd(3,2),dp)
+  3  3     5.41900611E-01   # Real(Yd(3,3),dp)
+Block YUIN    #  
+  1  1     6.23436868E-06   # Real(Yu(1,1),dp)
+  1  2     1.44479860E-06   # Real(Yu(1,2),dp)
+  1  3     2.25555072E-08   # Real(Yu(1,3),dp)
+  2  1    -7.23116664E-04   # Real(Yu(2,1),dp)
+  2  2     3.11817925E-03   # Real(Yu(2,2),dp)
+  2  3     1.34449691E-04   # Real(Yu(2,3),dp)
+  3  1     4.79953585E-03   # Real(Yu(3,1),dp)
+  3  2    -3.30961509E-02   # Real(Yu(3,2),dp)
+  3  3     7.93217764E-01   # Real(Yu(3,3),dp)
+Block TDIN    #  
+ 1 1   0.000000E+00         # Td(1,1)
+ 1 2   0.000000E+00         # Td(1,2)
+ 1 3   0.000000E+00         # Td(1,3)
+ 2 1   0.000000E+00         # Td(2,1)
+ 2 2   0.000000E+00         # Td(2,2)
+ 2 3   0.000000E+00         # Td(2,3)
+ 3 1   0.000000E+00         # Td(3,1)
+ 3 2   0.000000E+00         # Td(3,2)
+ 3 3   0.000000E+00         # Td(3,3)
+Block TUIN    #  
+  1  1    -3.33562236E-02   # Real(Tu(1,1),dp)
+  1  2    -7.73031445E-03   # Real(Tu(1,2),dp)
+  1  3    -1.23267880E-04   # Real(Tu(1,3),dp)
+  2  1     3.86898414E+00   # Real(Tu(2,1),dp)
+  2  2    -1.66838053E+01   # Real(Tu(2,2),dp)
+  2  3    -7.34775000E-01   # Real(Tu(2,3),dp)
+  3  1    -2.01614509E+01   # Real(Tu(3,1),dp)
+  3  2     1.39028117E+02   # Real(Tu(3,2),dp)
+  3  3    -3.47341817E+03   # Real(Tu(3,3),dp)
+Block ME012IN       #  
+ 1   me012IN         # me012
+Block ME022IN       #  
+ 1   me022IN         # me022
+Block ME032IN       #  
+ 1   me032IN         # me032
+Block ML012IN       #  
+ 1   ml012IN         # ml012
+Block ML022IN       #  
+ 1   ml022IN         # ml022
+Block ML032IN       #  
+ 1   ml032IN         # ml032
+Block TEPIN         #  
+ 1   TepIN          # Tep
+Block TMUPIN        #  
+ 1   TmupIN         # Tmup
+Block TYE11IN       #  
+ 1   0.000000E+00         # TYe11
+Block TYE22IN       #  
+ 1   0.000000E+00         # TYe22
+Block TYE33IN       #  
+ 1   TYe33IN         # TYe33
+Block YE11IN       #  
+ 1   Ye11IN         # Ye11
+Block YE22IN       #  
+ 1   Ye22IN         # Ye22
+Block YE33IN       #  
+ 1   Ye33IN         # Ye33
+Block NPIN       #  
+ 3   vSIN             # vS   
+ 1   LambdaIN         # lam
+ 2   InvLamIN         # Tlam
+Block GAUGEIN       #  
+ 5   gpIN         # gp
+Block MSOFTIN       #  
+ 1   M1IN         # M1
+ 3   M3IN         # M3
+ 4   M4IN         # M4
+ 2   M2IN         # M2

@@ -1,0 +1,24 @@
+# Channels which contribute to 1/(omega) more than 1%.
+# Relative contributions in % are displayed
+    9% ~N1 ~C1 ->d1 U1 
+    9% ~N1 ~C1 ->d2 U2 
+    8% ~C1 ~C1 ->Wm Wm 
+    8% ~N1 ~N1 ->Wm Wp 
+    7% ~N1 ~C1 ->d3 U3 
+    6% ~N1 ~C1 ->Z Wm 
+    5% ~se1 ~Se1 ->Wm Wp 
+    5% ~C1 ~c1 ->Z Z 
+    4% ~C1 ~c1 ->Wm Wp 
+    3% ~se1 ~Se1 ->h1 h1 
+    3% ~C1 ~c1 ->A Z 
+    3% ~N1 ~C1 ->Nu3 e2 
+    3% ~se1 ~Se1 ->Z Z 
+    2% ~C1 ~c1 ->u1 U1 
+    2% ~C1 ~c1 ->u2 U2 
+    2% ~C1 ~c1 ->d1 D1 
+    2% ~C1 ~c1 ->d2 D2 
+    2% ~N1 ~C1 ->Nu1 e3 
+    2% ~C1 ~c1 ->d3 D3 
+    2% ~C1 ~c1 ->u3 U3 
+    2% ~N1 ~C1 ->A Wm 
+    2% ~N1 ~C1 ->Nu2 e1 
