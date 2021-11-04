@@ -54,6 +54,36 @@ UpperLim = 1.15
 LowerLim = 0.85
 
 ###################################################################
+free_parameters = {
+    "m0Input":[],
+    "m121Input":[],
+    "m122Input":[],
+    "m123Input":[],
+    "m124Input":[],
+    "TanBetaIN":[],
+    "A0Input":[],
+    "LambdaIN":[],
+    "InvLamIN":[],
+    "vSIN":[],
+    "TepIN":[],
+    "TmupIN":[],
+    "vd":[],
+    "Ye11IN":[],
+    "Ye22IN":[],
+    "Ye33IN":[],
+    "Yv11IN":[],
+    "Yv22IN":[],
+    "Yv33IN":[],
+    "me012IN":[],
+    "me022IN":[],
+    "me032IN":[],
+    "ml012IN":[],
+    "ml022IN":[],
+    "ml032IN":[],
+    "mvR012IN":[],
+    "mvR022IN":[],
+    "mvR032IN":[]
+ }
 
 fileno = 1
 while fileno < MaxNumberOfSolution:
@@ -111,6 +141,35 @@ while fileno < MaxNumberOfSolution:
             mvR032IN = uniform(1e5, 3e7)
 
             # alpha = np.sign(np.random.uniform(-1,1))*np.random.uniform(0.20, 0.28) # Free U(1) prime charge
+########################### Save Free Parameters #########################################
+            free_parameters["m0Input"].append(m0Input)
+            free_parameters["m121Input"].append(m121Input)
+            free_parameters["m122Input"].append(m122Input)
+            free_parameters["m123Input"].append(m123Input)
+            free_parameters["m124Input"].append(m124Input)
+            free_parameters["TanBetaIN"].append(TanBetaIN)
+            free_parameters["A0Input"].append(A0Input)
+            free_parameters["LambdaIN"].append(LambdaIN)
+            free_parameters["InvLamIN"].append(InvLamIN)
+            free_parameters["vSIN"].append(vSIN)
+            free_parameters["TepIN"].append(TepIN)
+            free_parameters["TmupIN"].append(TmupIN)
+            free_parameters["vd"].append(vd)
+            free_parameters["Ye11IN"].append(Ye11IN)
+            free_parameters["Ye22IN"].append(Ye22IN)
+            free_parameters["Ye33IN"].append(Ye33IN)
+            free_parameters["Yv11IN"].append(Yv11IN)
+            free_parameters["Yv22IN"].append(Yv22IN)
+            free_parameters["Yv33IN"].append(Yv33IN)
+            free_parameters["me012IN"].append(me012IN)
+            free_parameters["me022IN"].append(me022IN)
+            free_parameters["me032IN"].append(me032IN)
+            free_parameters["ml012IN"].append(ml012IN)
+            free_parameters["ml022IN"].append(ml022IN)
+            free_parameters["ml032IN"].append(ml032IN)
+            free_parameters["mvR012IN"].append(mvR012IN)
+            free_parameters["mvR022IN"].append(mvR022IN)
+            free_parameters["mvR032IN"].append(mvR032IN)
 
 ########################### End of Free Parameters #########################################
 ############################################################################################
@@ -219,6 +278,7 @@ while fileno < MaxNumberOfSolution:
 
         UpdatedLHAFile.close()
 
+
 ############## Run SPheno ########################################################################
 #        LHA.NewSLHAFileName = "SPheno.spc.NonUMSSM."+str(RandomSolIndex)
 #        LHA.NewSLHAFileFullPath = "SPhenoOutputs/" + LHA.NewSLHAFileName
@@ -238,3 +298,9 @@ while fileno < MaxNumberOfSolution:
                 LHA.Erase(SLHAFileName)
             else:
                 LHA.Erase(SLHAFileName)
+
+############## Save free params to csv file ########################################################################
+df = pd.DataFrame(free_parameters)
+hdr = False if os.path.isfile('free_parameters.csv') else True
+df.to_csv('free_parameters.csv', mode='a', header=hdr)
+
